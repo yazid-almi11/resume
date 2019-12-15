@@ -321,7 +321,12 @@ const IndexPage = () => (
                 width="150px"
               ></img>
             </li>
-
+            <li className="list-inline-item">
+              <img
+                src="https://badge.trueability.com/issued_certifications/473D2bJDLpV.png"
+                width="150px"
+              ></img>
+            </li>
             <li className="list-inline-item">
               <img src={kafka} width="190px"></img>
             </li>
