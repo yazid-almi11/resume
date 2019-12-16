@@ -238,7 +238,7 @@ const IndexPage = () => (
           <h2 className="mb-5">Compétences</h2>
 
           <div className="subheading mb-3">
-            Programming Languages &amp; Tools
+           Langages &amp; outils
           </div>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
