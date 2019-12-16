@@ -5,6 +5,21 @@ import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 import 'font-awesome/css/font-awesome.min.css';
+
+import {
+  FaJava,
+  DiJavascript1,
+  FaLinux,
+  FaReact,
+  FaGit,
+  FaNpm,
+  FaLinkedin,
+  FaGithub,
+  FaJenkins,
+  FaDatabase,
+  FaCheck,
+} from 'react-icons/fa';
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -42,7 +57,7 @@ const IndexPage = () => (
               const { icon, url } = social;
               return (
                 <a key={url} href={url}>
-                  <i className={`fab ${icon}`}></i>
+                  <i>{icon === 'fa-github' ? <FaGithub /> : <FaLinkedin />}</i>
                 </a>
               );
             })}
@@ -227,20 +242,22 @@ const IndexPage = () => (
           </div>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
-              <i className="fab fa-java"></i>
+              <i>
+                <FaJava />
+              </i>
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-linux"></i>
+              <FaLinux />
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-html5"></i>
+              <FaGit />
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-react"></i>
+              <FaReact />
             </li>
 
             <li className="list-inline-item">
-              <i className="fab fa-npm"></i>
+              <FaNpm />
             </li>
 
             <li className="list-inline-item">
@@ -261,18 +278,21 @@ const IndexPage = () => (
             </li>
 
             <li className="list-inline-item">
-              <i className="fa fa-database"></i>
+              <FaDatabase />
+            </li>
+            <li className="list-inline-item">
+              <FaJenkins />
             </li>
           </ul>
 
           <div className="subheading mb-3"></div>
           <ul className="fa-ul mb-0">
             <li>
-              <i className="fa-li fa fa-check"></i>
+              <FaCheck />
               TDD
             </li>
             <li>
-              <i className="fa-li fa fa-check"></i>
+              <FaCheck />
               Développement en mode agile
             </li>
           </ul>
