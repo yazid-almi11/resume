@@ -1,14 +1,10 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-
-import kafka from '../assets/images/kafka.png';
-
+import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-library.add(fab);
+import 'font-awesome/css/font-awesome.min.css';
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -331,7 +327,10 @@ const IndexPage = () => (
               ></img>
             </li>
             <li className="list-inline-item">
-              <img src={kafka} width="190px"></img>
+              <img
+                src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/12673398"
+                width="190px"
+              ></img>
             </li>
           </ul>
         </div>

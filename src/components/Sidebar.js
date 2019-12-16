@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
-
-import avatar from '../assets/images/avatar.png';
+import 'font-awesome/css/font-awesome.min.css';
 import config from '../../config';
 
 export class Sidebar extends Component {
@@ -34,8 +33,8 @@ export class Sidebar extends Component {
           <span className="d-none d-lg-block">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
-              src={avatar}
-              alt=""
+              src="https://media.licdn.com/dms/image/C4D03AQFs5Pnuhl8TgA/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=yTHYFA43imW8Vwh7wk7JT5ClMh7-78JT3W6R9Jf8Z6g"
+              alt="photo"
             />
           </span>
         </a>
