@@ -56,7 +56,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a key={url} href={url} target="_blank">
                   <i>{icon === 'fa-github' ? <FaGithub /> : <FaLinkedin />}</i>
                 </a>
               );
@@ -237,9 +237,7 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Compétences</h2>
 
-          <div className="subheading mb-3">
-           Langages &amp; outils
-          </div>
+          <div className="subheading mb-3">Langages &amp; outils</div>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
               <i>
@@ -335,22 +333,38 @@ const IndexPage = () => (
           <h2 className="mb-5">Certifications</h2>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
-              <img
-                src="https://images.youracclaim.com/size/340x340/images/7b8d90af-f937-4068-9179-01cdc6700c74/5274_badge_database_admininstrator_600x600_Certified-Associate-JAVA-SE8-PROGRAMMER.png"
-                width="150px"
-              ></img>
+              <a
+                href="https://www.youracclaim.com/badges/0d7cfc28-8dd4-4868-8f97-6031dceecb91/linked_in_profile"
+                target="_blank"
+              >
+                <img
+                  src="https://images.youracclaim.com/size/340x340/images/7b8d90af-f937-4068-9179-01cdc6700c74/5274_badge_database_admininstrator_600x600_Certified-Associate-JAVA-SE8-PROGRAMMER.png"
+                  width="150px"
+                  alt="Java"
+                ></img>
+              </a>
             </li>
             <li className="list-inline-item">
-              <img
-                src="https://badge.trueability.com/issued_certifications/473D2bJDLpV.png"
-                width="150px"
-              ></img>
+              <a
+                href="https://badge.trueability.com/issued_certifications/473D2bJDLpV.html"
+                target="_blank"
+                alt="Elastic"
+              >
+                <img
+                  src="https://badge.trueability.com/issued_certifications/473D2bJDLpV.png"
+                  width="150px"
+                  alt="Confluent"
+                ></img>
+              </a>
             </li>
+
             <li className="list-inline-item">
-              <img
-                src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/12673398"
-                width="190px"
-              ></img>
+              <a href="https://www.credential.net/0d99mduk" target="_blank">
+                <img
+                  src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/12673398"
+                  width="190px"
+                ></img>
+              </a>
             </li>
           </ul>
         </div>
