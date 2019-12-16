@@ -6,6 +6,9 @@ import kafka from '../assets/images/kafka.png';
 
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fab);
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -35,7 +38,7 @@ const IndexPage = () => (
             <br></br>• Développement ETL Talend /Logstash
             <br></br>
             Naturellement motivé et enthousiaste, je me forme constamment sur de
-            nouvelles technologies. J'aime avant tout l'esprit d'équipe, les
+            nouvelles technologies. J'aime avant tout l'esprit d'équipe et les
             relations de confiance.
           </p>
           <div className="social-icons">
@@ -299,7 +302,7 @@ const IndexPage = () => (
             aura lieu le 7 juillet à Nice.
           </p>
           <p className="mb-0">
-            En dehors su sport, je m'intéresse beaucoup à la musique, à
+            En dehors du sport, je m'intéresse beaucoup à la musique, à
             l'histoire ainsi qu'au développement de mes compétences par le biais
             de formations et de veille technologique.
           </p>

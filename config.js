@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Yazid Almi Gastby Resume', // <title>
+  siteTitle: 'Yazid Almi', // <title>
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `./`, // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: `.`,
   firstName: 'Yazid',
   lastName: 'Almi',
   // social
